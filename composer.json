@@ -1,0 +1,22 @@
+{
+    "name": "wptoolco/helper",
+    "version": "1.0.0",
+    "description": "WordPress Development Helper Class",
+    "keywords": ["wordpress", "helper", "abstract", "wordpress abstract class"],
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "WpTool\\Helper\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hasan Ahani",
+            "email": "hasanahani.ir@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    }
+}
