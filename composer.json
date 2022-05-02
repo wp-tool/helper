@@ -1,6 +1,6 @@
 {
     "name": "wptoolco/helper",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "WordPress Development Helper Class",
     "keywords": ["wordpress", "helper", "abstract", "wordpress abstract class"],
     "type": "library",

@@ -110,7 +110,7 @@ abstract class Rest extends \WP_REST_Request
                 return is_user_logged_in() && current_user_can($access);
             };
         }else{
-            $default['permission_callback']  = $access ? '__return_true' :  array($this, 'rest_access');
+            $default['permission_callback']  = $access ? '__return_true' :  array($this, 'permission');
         }
 
         if (!isset($args['callback'])){
@@ -128,7 +128,7 @@ abstract class Rest extends \WP_REST_Request
                         return is_user_logged_in() && current_user_can($access);
                     };
                 }else{
-                    $default['permission_callback']  = $access ? '__return_true' :  array($this, 'rest_access');
+                    $default['permission_callback']  = $access ? '__return_true' :  array($this, 'permission');
                 }
 
                 unset($route['access']);
